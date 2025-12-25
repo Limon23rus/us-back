@@ -1,0 +1,12 @@
+node_modules/
+.env
+.nyc_output
+coverage/
+*.log
+.DS_Store
+uploads/
+dist/
+logs/
+*.pid
+*.seed
+*.pid.lock
