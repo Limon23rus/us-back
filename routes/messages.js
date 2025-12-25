@@ -16,7 +16,7 @@ export const setSocketIO = (io) => {
 router.get('/chat/:chatId', async (req, res) => {
   try {
     const { chatId } = req.params;
-    const { limit = 50, offset = 0 } = req.query;
+    const { limit = 1000, offset = 0 } = req.query;
 
     // Проверяем доступ к чату
     const chat = await Chat.findById(chatId, req.user.userId);

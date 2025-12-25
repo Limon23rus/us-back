@@ -29,7 +29,7 @@ export class Message {
     }
   }
 
-  static async getChatMessages(chatId, userId, limit = 50, offset = 0) {
+  static async getChatMessages(chatId, userId, limit = 1000, offset = 0) {
     const result = await pool.query(
       `SELECT m.*, 
               u.username as sender_username,
